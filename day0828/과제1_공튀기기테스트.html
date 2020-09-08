@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Document</title>
+<style>
+
+#ball{
+	width:100px;
+	height:100px;
+	position: relative; /*부모요소를 기준으로 나의 위치를 결정하는 방법: 여기서 부모는 body*/
+	left:0px;
+	top:100px;
+	animation-name:ballBounce;/*이 CSS가 사용하게될 애니메이션 프레임 이름*/
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+
+#shadow{
+	width:50px;
+	height:5px;
+	background:lightgray;
+	position: absolute;
+	top: 500px;
+	animation-name:shadowBg;
+	animation-duration:2s;
+	animation-iteration-count:infinite;
+	animation-direction: alternate;
+}
+
+@keyframes ballBounce{
+	10%{
+			width:50px;
+			height:50px;
+	}
+	30%{
+	}
+
+@keyframes shadowBg{
+	from{
+		width:50px;
+		height:5px;
+	}
+	to{
+		width:200px;
+		left:500px;
+	}
+</style>
+</head>
+<body>
+	<div id="ball"><img src="../images/ball.png" width="100px"/></div>
+
+	<div id="shadow"></div>
+</body>
+</html>

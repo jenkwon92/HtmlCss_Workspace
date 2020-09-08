@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrapper {
+      width: 1050px;
+      height: 340px;
+      background: brown;
+      margin: auto;
+      padding: 20px; /*top right bottom left 모두 10px의 패딩값을 가짐*/
+      box-sizing: border-box;
+    }
+    .box {
+      width: 500px;
+      height: 300px;
+      background: url(https://www.fnnews.com/resource/media/image/2016/02/26/201602261033231259_l.jpg);
+      background-size: 500px 300px; 
+      display:inline-block;
+      border: 5px solid #d0d9e2;
+      box-sizing: border-box; 
+      margin: auto;
+    }
+  </style>
+
+</head>
+<body>
+  <div id="wrapper">
+    <div class="box"></div>
+    <div class="box" style="transform:scaleX(-1)"></div>
+  </div>
+</body>
+</html>
+
