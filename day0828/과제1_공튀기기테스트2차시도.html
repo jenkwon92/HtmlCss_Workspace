@@ -14,7 +14,6 @@
 	animation-iteration-count:infinite;
 	animation-direction: alternate;
 	}
-
 #ball{
 	width:100px;
 	position: absolute; 
@@ -25,7 +24,6 @@
 	animation-iteration-count:infinite;
 	animation-direction: alternate; 
 	}
-
 #shadowWrapper{
 	width:100px;
 	height:10px;
@@ -39,10 +37,10 @@
 	}
 
 #shadow{
-	background:lightgray;
 	width:100%;
 	height:100%;
-	position: absolute; 
+	background:lightgray;
+  border-radius: 40px;
 	animation-name:size;
 	animation-duration:0.5s;
 	animation-iteration-count:infinite;
@@ -69,11 +67,11 @@
 @keyframes size{
 	from{
 		width:100px;
-		height: 10px;
+		height: 20px;
 
 	}
 	to{
-		width:10px;
+		width:30px;
 		height: 10px;
 	}
 }
@@ -84,7 +82,7 @@
 </head>
 <body>
 	<div id="ballWrapper">
-		<div id="ball"><img src="../images/ball.png" width="100px"/></div>
+		<div id="ball"><img src="../images/ball.jfif" ></div>
 	</div>
 	<div id="shawdowWrapper">
 		<div id="shadow"></div>
